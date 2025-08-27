@@ -6,6 +6,9 @@ alias CLS="clear"
 alias CLA="clear"
 alias CLEAR="clear"
 
+alias pull="$HOME/Config/pull.sh"
+alias push="$HOME/Config/push.sh"
+
 
 alias orcaslicer='$HOME/Applications/OrcaSlicer.AppImage'
 alias matlab="/usr/local/MATLAB/R2023b/bin/matlab"
