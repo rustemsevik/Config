@@ -4,8 +4,14 @@ set -euo pipefail
 DOTFILES_DIR="$HOME/Config/dotfiles"
 ZSH_INIT="$DOTFILES_DIR/zshrc.init"
 ZSHRC="$HOME/.zshrc"
+REPO_DIR="$HOME/Config"
 
 echo "🚀 Installing dotfiles from $DOTFILES_DIR"
+
+# --- Git sync first ---
+cd "$REPO_DIR"
+echo "🔄 Pulling latest changes from GitHub..."
+git pull --rebase
 
 # --- Guake ---
 if command -v guake >/dev/null 2>&1; then
