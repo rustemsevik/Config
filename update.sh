@@ -21,7 +21,7 @@ fi
 # --- Git push ---
 cd "$REPO_DIR"
 git add .
-git commit -m "Update dotfiles: $(date)" || echo "ℹ️  No changes to commit."
+git commit -m "Update Config: $(date)" || echo "ℹ️  No changes to commit."
 git push
 
 echo "✅ Settings saved and pushed to GitHub!"
