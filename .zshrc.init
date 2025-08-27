@@ -1,0 +1,33 @@
+alias clc="clear" 
+alias cls="clear"
+alias cla="clear"
+alias CLC="clear"
+alias CLS="clear"
+alias CLA="clear"
+alias CLEAR="clear"
+
+
+alias orcaslicer='$HOME/Applications/OrcaSlicer.AppImage'
+alias matlab="/usr/local/MATLAB/R2023b/bin/matlab"
+alias matlab-connect='~/bin/MATLABConnector toggle'
+alias py="python3"
+alias cd..='cd ..'
+alias cdls='cdlss'
+
+#alias focal='sudo docker start focal && sudo docker attach focal'
+#alias humble='sudo docker run -it osrf/ros:humble-desktop'
+
+
+#export PATH="$PATH:/home/rustem/julia-1.9.4/bin"
+#export PATH=/opt/gcc-arm-none-eabi-10.3-2021.10/bin:$PATH
+
+#source /opt/ros/rolling/setup.zsh
+#source ~/ros2_ws/install/setup.zsh
+
+#My functions
+cdlss () {
+  builtin cd "$@" && ls;
+}
+
+export PICO_SDK_PATH=/home/rustem/pico-sdk
+export RTROBOT_DIR=/home/rustem/Documents/legged/rtrobot
