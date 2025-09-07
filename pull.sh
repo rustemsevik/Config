@@ -5,6 +5,7 @@ DOTFILES_DIR="$HOME/Config/dotfiles"
 ZSH_INIT="$DOTFILES_DIR/zshrc.init"
 ZSHRC="$HOME/.zshrc"
 REPO_DIR="$HOME/Config"
+SETUP_SCRIPT="$REPO_DIR/setup.sh"
 
 echo "🚀 Installing dotfiles from $DOTFILES_DIR"
 
@@ -12,6 +13,15 @@ echo "🚀 Installing dotfiles from $DOTFILES_DIR"
 cd "$REPO_DIR"
 echo "🔄 Pulling latest changes from GitHub..."
 git pull --rebase
+
+# --- Setup ---
+if [ -f "$SETUP_SCRIPT" ]; then
+    echo "⚙️  Running setup.sh..."
+    bash "$SETUP_SCRIPT"
+else
+    echo "⚠️  setup.sh not found in $REPO_DIR"
+fi
+
 
 # --- Guake ---
 if command -v guake >/dev/null 2>&1; then
