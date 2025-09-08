@@ -42,6 +42,7 @@ PKGS=(
   ddcutil i2c-tools
   glib2.0-bin
   gettext
+  libreoffice
 )
 log "Installing base packages"
 for p in "${PKGS[@]}"; do install_apt "$p"; done
