@@ -43,6 +43,7 @@ PKGS=(
   glib2.0-bin
   gettext
   libreoffice
+  cmake
 )
 log "Installing base packages"
 for p in "${PKGS[@]}"; do install_apt "$p"; done
