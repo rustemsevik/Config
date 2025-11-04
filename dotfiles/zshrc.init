@@ -26,6 +26,7 @@ alias cdls='cdlss'
 
 #source /opt/ros/rolling/setup.zsh
 #source ~/ros2_ws/install/setup.zsh
+source /opt/ros/jazzy/setup.zsh
 
 #My functions
 cdlss () {
