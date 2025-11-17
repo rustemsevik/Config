@@ -1,0 +1,29 @@
+# zshrc.local — machine-specific zsh settings
+# --------------------------------------------
+# This file is optional and intended for per-computer tweaks that shouldn't
+# be committed to the main repo. Examples: sourcing ROS, local SDKs, private
+# credentials helpers, or hardware-specific PATH additions.
+#
+# Keep this file readable and idempotent. It will only be sourced if present
+# by `zshrc.init`.
+
+source ~/ros2_jazzy/install/local_setup.zsh
+
+# Example: source ROS setup (uncomment and adapt to your ROS install)
+# if [ -f "/opt/ros/noetic/setup.zsh" ]; then
+#     source /opt/ros/noetic/setup.zsh
+# fi
+
+# Example: local MATLAB path
+# export PATH="/usr/local/MATLAB/R2023b/bin:$PATH"
+
+# Example: local-only aliases/functions
+# alias mydev='cd ~/projects/mydev && code .'
+
+# Example: append local bin to PATH
+# export PATH="$HOME/.local/bin:$PATH"
+
+# Example: enable private secrets helper (safe no-op if missing)
+# [ -f "$HOME/.local/bin/secret-helper" ] && source "$HOME/.local/bin/secret-helper"
+
+# End of zshrc.local

@@ -31,3 +31,15 @@ cdlss () {
 
 export PICO_SDK_PATH=/home/rustem/pico-sdk
 export RTROBOT_DIR=/home/rustem/Documents/legged/rtrobot
+
+# --- Computer-specific local overrides ---
+# If you have machine-specific settings (ROS, local SDKs, proprietary paths),
+# put them in `~/.config/Config/dotfiles/zshrc.local` or
+# `${HOME}/Config/dotfiles/zshrc.local`. This file is optional and not tracked
+# by the main repository (you can add it to .gitignore if desired).
+# The script below will source it if present.
+LOCAL_ZSHRC="$HOME/Config/dotfiles/zshrc.local"
+if [ -f "$LOCAL_ZSHRC" ]; then
+  # shellcheck source=/dev/null
+  source "$LOCAL_ZSHRC"
+fi
