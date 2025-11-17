@@ -7,8 +7,6 @@
 # Keep this file readable and idempotent. It will only be sourced if present
 # by `zshrc.init`.
 
-source ~/ros2_jazzy/install/local_setup.zsh
-
 # Example: source ROS setup (uncomment and adapt to your ROS install)
 # if [ -f "/opt/ros/noetic/setup.zsh" ]; then
 #     source /opt/ros/noetic/setup.zsh
