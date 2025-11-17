@@ -68,6 +68,7 @@ fi
 if have_cmd zsh && [ "${SHELL:-}" != "$(command -v zsh)" ]; then
   log "Setting zsh as default shell"
   chsh -s "$(command -v zsh)" "$USER" || warn "Couldn't change shell; log out/in to apply"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 # -------------------- DDCUTIL / I2C PERMISSIONS -----------------------------
@@ -153,6 +154,9 @@ else
   EXT_CHANGED=1
   echo "✔ Installed (source) & enabled: $INST_UUID"
 fi
+
+# -------------------- EXTENSION UPDATE SCRIPT -------------------------------
+./pull.sh
 
 
 # -------------------- SYSTEM CLEANUP ----------------------------------------
