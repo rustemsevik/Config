@@ -18,15 +18,11 @@ alias cd..='cd ..'
 alias cdls='cdlss'
 
 #alias focal='sudo docker start focal && sudo docker attach focal'
-#alias humble='sudo docker run -it osrf/ros:humble-desktop'
-
 
 #export PATH="$PATH:/home/rustem/julia-1.9.4/bin"
 #export PATH=/opt/gcc-arm-none-eabi-10.3-2021.10/bin:$PATH
 
-#source /opt/ros/rolling/setup.zsh
-#source ~/ros2_ws/install/setup.zsh
-source /opt/ros/jazzy/setup.zsh
+#source /opt/ros/jazzy/setup.zsh
 
 #My functions
 cdlss () {
