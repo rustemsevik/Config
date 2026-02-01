@@ -16,6 +16,7 @@ alias matlab-connect='~/bin/MATLABConnector toggle'
 alias py="python3"
 alias cd..='cd ..'
 alias cdls='cdlss'
+alias CD ='cd'
 
 #alias focal='sudo docker start focal && sudo docker attach focal'
 
