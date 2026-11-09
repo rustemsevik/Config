@@ -20,7 +20,7 @@ alias CD="cd"
 alias cD="cd"
 alias cd..='cd ..'
 alias cdls='cdlss'
-alias CD .. ='cd ..'
+# alias CD .. ='cd ..'
 
 #alias focal='sudo docker start focal && sudo docker attach focal'
 
